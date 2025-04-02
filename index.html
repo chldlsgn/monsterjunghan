@@ -4,71 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카카오페이 송금</title>
-    
-    <!-- OG 태그 설정 (카톡에서 미리보기 이미지로 표시됨) -->
-    <meta property="og:title" content="송금보내요" />
-    <meta property="og:description" content="1,000,000원을 보냈어요. 송금 받기 전까지 보낸 분은 내역 상세화면에서 취소할 수 있어요." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/chldlsgn/monsterjunghan/main/1144.jpg" />
-    <meta property="og:url" content="https://chldlsgn.github.io/monsterjunghan/" />
-    
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f5f6f7;
-            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
         .card {
-            width: 300px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            width: 360px;
+            height: 540px;
+            background: url('https://raw.githubusercontent.com/chldlsgn/monsterjunghan/main/1144_resized.jpg') no-repeat center/cover;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             cursor: pointer;
+            position: relative;
         }
-        .card-header {
-            background: #ffeb00;
-            padding: 16px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .card-body {
-            padding: 16px;
-        }
-        .amount {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .description {
-            font-size: 14px;
-            color: gray;
-            margin-top: 4px;
-        }
-        .button {
-            display: block;
+        .card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 12px;
-            margin-top: 12px;
-            background: #f2f2f2;
-            border: none;
-            border-radius: 6px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="card" onclick="location.href='https://tldus2355.github.io'">
-        <div class="card-header">송금보내요</div>
-        <div class="card-body">
-            <div class="amount">1,000,000원을 보냈어요.</div>
-            <div class="description">송금 받기 전까지 보낸 분은 내역 상세화면에서 취소할 수 있어요.</div>
-            <button class="button" onclick="event.stopPropagation(); location.href='https://sites.google.com'">송금 받기</button>
-        </div>
-    </div>
+    <div class="card" onclick="window.location.href='https://your-link-here.com'"></div>
 </body>
 </html>
