@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정한이 식사 시작!</title>
+    <title>정한이 식사시작!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background-color:black;">
-    <video controls autoplay style="width:100%; max-width:800px;">
-        <source src="영상파일주소.mp4" type="video/mp4">
-        브라우저가 동영상을 지원하지 않습니다.
-    </video>
+<body>
+    <img src="https://raw.githubusercontent.com/chldlsgn/monsterjunghan/main/KakaoTalk_20250322_2315294981online-video-cutter.com-ezgif.com-video-to-gif-converter.gif" alt="정한이 GIF">
 </body>
 </html>
